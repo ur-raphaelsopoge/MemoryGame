@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animex Memory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1 class="brand">John Raphael Abino</h1>
+    <p class="label">Memory game</p>
+    <h2 class="title">Match the symbols</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-name">Moves</span>
+        <span class="stat-value" id="moves">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-name">Time</span>
+        <span class="stat-value" id="time">0:00</span>
+      </div>
+      <div class="stat">
+        <span class="stat-name">Best</span>
+        <span class="stat-value" id="best">--</span>
+      </div>
+    </div>
+
+    <div class="board" id="board" role="group" aria-label="Memory board"></div>
+
+    <div class="result" id="result" role="status">
+      <p class="result-title">All pairs found</p>
+      <p class="result-text" id="result-text"></p>
+    </div>
+    <button class="restart" id="restart" type="button">New game</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
